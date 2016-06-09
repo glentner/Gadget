@@ -1,7 +1,7 @@
 #
 #
 
-PREFIX := $(abspath .)
+PREFIX := $(abspath .)/gadget/Gadget2
 FFTW   := fftw-2.1.5
 GSL    := gsl-1.16
 HDF5   := hdf5-1.6.10
