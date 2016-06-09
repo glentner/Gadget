@@ -12,17 +12,17 @@ gadget: $(FFTW) $(GSL) $(HDF5)
 .PHONY: $(FFTW)
 $(FFTW):
 	cd $(FFTW) && \
-	./configure --prefix=$(PREFIX) --enable-mpi --enable-type-prefix --enable-float && \
+	./configure --prefix="$(PREFIX)" --enable-mpi --enable-type-prefix --enable-float && \
 	make && make install
 
 .PHONY: $(GSL)
 $(GSL):
 	cd $(GSL) && \
-	./configure --prefix=$(PREFIX) && \
+	./configure --prefix="$(PREFIX)" && \
 	make && make install
 
 .PHONY: $(HDF5)
 $(HDF5):
 	cd $(HDF5) && \
-	./configure --prefix=$(PREFIX) && \
+	./configure --prefix="$(PREFIX)" && \
 	make && make install
