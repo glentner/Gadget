@@ -103,8 +103,8 @@ ifeq ($(SYSTYPE),"UNIX-PC")
 CC       =  mpicc
 OPTIMIZE =  -O3 -Wall
 GSL_INCL =  -Iinclude
-GSL_LIBS =  -L/lib  -Wl,"-R lib"
-FFTW_INCL=  
+GSL_LIBS =  -Llib
+FFTW_INCL=
 FFTW_LIBS=
 MPICHLIB =
 HDF5INCL =
